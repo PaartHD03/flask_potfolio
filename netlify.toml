@@ -1,0 +1,7 @@
+[build]
+  functions = "functions"  # Folder where your serverless functions are located
+
+[[redirects]]
+  from = "/chat"
+  to = "/.netlify/functions/flask_app"  # Redirects to the Lambda function endpoint
+  status = 200
